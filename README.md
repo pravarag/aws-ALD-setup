@@ -1,0 +1,1 @@
+#Guide to setting up AWS API Gateway-Lambda-DynamoDB using Terraform modules#
