@@ -4,7 +4,12 @@
 # --------------------------
 
 
-variable "subnet_id" {
-  description = "The subnet id for a subnet under a vpc"
+variable "public_subnet_id" {
+  description = "The public subnet id under aws-ALD-vpc"
+  type = string
+}
+
+variable "vpc_id" {
+  description = "The vpc id of the default vpc"
   type = string
 }
