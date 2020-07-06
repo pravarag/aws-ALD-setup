@@ -8,7 +8,7 @@ import (
 
 
 type MyEvent struct {
-
+	// hello world will not be return here
 
 }
 
