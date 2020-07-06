@@ -4,12 +4,43 @@
 # --------------------------
 
 
-variable "public_subnet_id" {
-  description = "The public subnet id under aws-ALD-vpc"
-  type = string
+variable "region" {
+  default = "us-east-1"
 }
 
-variable "vpc_id" {
-  description = "The vpc id of the default vpc"
-  type = string
+variable "availabilityZone" {
+  default = "us-east-1a"
+}
+
+variable "dnsSupport" {
+  default = "default"
+}
+
+variable "dnsHostNames" {
+    default = true
+}
+variable "vpcCIDRblock" {
+    default = "10.0.0.0/16"
+}
+
+variable "subnetPublicCIDRblock" {
+  default = "10.0.0.0/24"
+}
+
+variable "subnetPrivateCIDRblock" {
+    default = "10.0.1.0/24"
+}
+variable "destinationCIDRblock" {
+    default = "0.0.0.0/0"
+}
+variable "ingressCIDRblock" {
+    type = list
+    default = [ "0.0.0.0/0" ]
+}
+variable "egressCIDRblock" {
+    type = list
+    default = [ "0.0.0.0/0" ]
+}
+variable "mapPublicIP" {
+    default = true
 }
