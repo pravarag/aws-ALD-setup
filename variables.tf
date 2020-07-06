@@ -13,7 +13,7 @@ variable "availabilityZone" {
 }
 
 variable "dnsSupport" {
-  default = "default"
+  default = true
 }
 
 variable "dnsHostNames" {

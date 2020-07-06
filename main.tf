@@ -80,7 +80,7 @@ resource "aws_security_group" "ALD_VPC_Security_Group" {
 # create VPC Network access control list
 resource "aws_network_acl" "ALD_VPC_Security_ACL" {
   vpc_id = aws_vpc.aws-ALD-vpc.id
-  subnet_ids = [ aws_subnet.public_ALD_subnet.id, aws_subnet.private_ALD_subnet.id ]
+  subnet_ids = [ aws_subnet.public-ALD-subnet.id, aws_subnet.private-ALD-subnet.id ]
   
 # allow ingress port 22
   ingress {
